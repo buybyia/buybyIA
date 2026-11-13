@@ -1,0 +1,52 @@
+// Datos de ejemplo del prototipo. En la Fase 3 se sustituirán por datos reales de las tiendas.
+export type Product = [string, string, number, number, string[], string, string?];
+export type Sector = { n: string; ic: string; ex: string[]; specs: [string, string][]; lab: string[]; p: Product[] };
+
+export const D: Record<string, Sector> = {
+tech:{n:'Tecnología',ic:'💻',ex:['Portátil para diseño gráfico, máximo 1.200 €, 16 GB de RAM, 15", ligero y con buena batería','Auriculares con cancelación de ruido para trabajar en casa, hasta 150 €'],
+ specs:[['Uso','Diseño gráfico'],['Presupuesto','≤ 1.200 €'],['RAM','16 GB'],['Pantalla','15"'],['Peso','Ligero'],['Batería','Larga duración']],
+ lab:['Pantalla','RAM','Peso','Batería'],
+ p:[['Portátil creativo 15,6" · 16 GB','PcComponentes',1149,4.6,['15,6" · 100 % sRGB','16 GB','1,7 kg','~10 h'],'Mejor equilibrio entre precio y calidad de pantalla.','💻'],
+    ['Ultrabook ligero 15"','MediaMarkt',1199,4.5,['15" · 95 % sRGB','16 GB','1,4 kg','~13 h'],'El más ligero y con mejor batería, al límite del presupuesto.','🪶'],
+    ['Portátil 15,6" panel IPS','Amazon',979,4.3,['15,6" IPS','16 GB','1,8 kg','~8 h'],'La opción más barata; algo más pesado y menos batería.','💸'],
+['Portátil de 16" alto rendimiento','PcComponentes',1199,4.4,['16" · 165 Hz','16 GB','2,1 kg','~6 h'],'Muy potente, pero pesado y con menos batería.','🖥️'],
+['Portátil 14" con pantalla OLED','Amazon',1099,4.5,['14" OLED','16 GB','1,3 kg','~11 h'],'Colores excelentes en un formato muy portátil.','✨'],
+['Portátil 15" económico','Amazon',649,3.9,['15,6" FHD','8 GB','1,9 kg','~7 h'],'Opción barata, aunque con solo 8 GB de RAM.','🛒'],
+['Convertible táctil 15"','MediaMarkt',1149,4.3,['15" táctil','16 GB','1,6 kg','~9 h'],'Útil si dibujas con lápiz digital.','✏️'],
+['Portátil workstation 15,6"','eBay',899,4.2,['15,6" IPS','32 GB','2,0 kg','~7 h'],'Reacondicionado con mucha RAM; ideal para proyectos pesados.','🧰']]},
+sport:{n:'Deporte',ic:'🏃',ex:['Zapatillas de running para empezar, asfalto, con buena amortiguación y menos de 100 €','Bicicleta estática silenciosa para casa, hasta 300 €'],
+ specs:[['Deporte','Running'],['Superficie','Asfalto'],['Nivel','Principiante'],['Presupuesto','≤ 100 €'],['Prioridad','Amortiguación']],
+ lab:['Amortiguación','Peso','Ideal para','Durabilidad'],
+ p:[['Zapatilla de running amortiguada','Amazon',89,4.5,['Alta','270 g','Rodajes suaves','~700 km'],'La más cómoda para empezar y proteger las articulaciones.','👟'],
+    ['Zapatilla neutra de entrenamiento','Decathlon',69,4.4,['Media-alta','255 g','Uso diario','~600 km'],'Muy buen precio y versátil para varias distancias.','🏃'],
+    ['Zapatilla ligera de tempo','eBay',95,4.2,['Media','230 g','Series y ritmo','~500 km'],'Más rápida y ligera, pero menos amortiguada.','💨'],
+['Zapatilla de running con placa','Amazon',99,4.3,['Alta','245 g','Competición suave','~450 km'],'Impulso extra, aunque algo exigente para empezar.','⚡'],
+['Zapatilla trail ligera','Decathlon',79,4.4,['Media','280 g','Montaña y tierra','~600 km'],'Para cuando salgas del asfalto.','⛰️'],
+['Zapatilla max cushion','eBay',92,4.5,['Muy alta','290 g','Tiradas largas','~800 km'],'La más amortiguada y la más duradera.','☁️'],
+['Zapatilla running económica','AliExpress',39,3.9,['Media-baja','240 g','Uso ocasional','~300 km'],'Muy barata para probar si te gusta correr.','🛍️'],
+['Zapatilla running mujer amortiguada','Decathlon',85,4.4,['Alta','235 g','Rodajes diarios','~650 km'],'Horma específica y buen agarre.','🏃‍♀️']]},
+gifts:{n:'Regalos',ic:'🎁',ex:['Regalo para mi padre, le gusta el café y la tecnología, unos 50 €','Regalo original para una amiga que ama cocinar, hasta 40 €'],
+ specs:[['Para','Padre'],['Intereses','Café, tecnología'],['Presupuesto','~ 50 €'],['Ocasión','Cumpleaños']],
+ lab:['Encaja con','Uso','Envío','Sorpresa'],
+ p:[['Báscula de café con temporizador','Amazon',39,4.6,['Café','Diario','24 h','Alta'],'Un detalle útil que se usa cada mañana.','⚖️'],
+    ['Altavoz bluetooth compacto','MediaMarkt',49,4.4,['Tecnología','Frecuente','24-48 h','Media'],'Seguro y práctico; encaja con su gusto por la tecnología.','🔊'],
+    ['Kit degustación de café de especialidad','AliExpress',34,4.1,['Café','Ocasional','8-15 días','Alta'],'Muy original, pero tarda más en llegar.','🎁'],
+['Cafetera italiana de acero','Amazon',29,4.5,['Café','Diario','24 h','Media'],'Clásica, bonita y duradera.','☕'],
+['Cargador inalámbrico 3 en 1','MediaMarkt',45,4.4,['Tecnología','Diario','24-48 h','Media'],'Práctico para móvil, reloj y auriculares.','🔋'],
+['Libro de cata de café con taza','Amazon',24,4.3,['Café','Ocasional','24 h','Alta'],'Un regalo cuidado para aprender y disfrutar.','📚'],
+['Localizador smart tag (pack 2)','AliExpress',22,4.0,['Tecnología','Frecuente','8-15 días','Media'],'Barato y útil para llaves y cartera.','📍'],
+['Molinillo de café eléctrico','Amazon',42,4.4,['Café','Diario','24 h','Alta'],'Café recién molido cada mañana.','⚙️']]},
+home:{n:'Hogar y bricolaje',ic:'🛠️',ex:['Taladro inalámbrico para bricolaje en casa, hasta 80 €','Lámpara de escritorio con luz regulable para estudiar, menos de 40 €'],
+ specs:[['Herramienta','Taladro'],['Uso','Doméstico'],['Alimentación','Batería'],['Presupuesto','≤ 80 €']],
+ lab:['Voltaje','Baterías','Par máx.','Incluye'],
+ p:[['Taladro atornillador 18 V','Leroy Merlin',74,4.5,['18 V','2','45 Nm','Maletín y brocas'],'El más completo para uso doméstico habitual.','🛠️'],
+    ['Taladro compacto 12 V','Amazon',59,4.3,['12 V','1','30 Nm','Cargador'],'Ligero y barato; suficiente para tareas sencillas.','🪛'],
+    ['Taladro percutor 20 V','eBay',79,4.2,['20 V','1','50 Nm','Cargador'],'Más potente, ideal si vas a taladrar pared.','💪'],
+['Kit taladro + 30 accesorios','Amazon',69,4.4,['18 V','2','40 Nm','30 accesorios'],'Todo incluido para empezar.','🧰'],
+['Atornillador compacto 3,6 V','Leroy Merlin',24,4.2,['3,6 V','1','5 Nm','Puntas'],'Perfecto para montar muebles.','🔧'],
+['Taladro percutor con cable 750 W','Leroy Merlin',49,4.3,['230 V','—','60 Nm','Maletín'],'Potencia constante y sin baterías.','🔌'],
+['Taladro 18 V sin escobillas','eBay',79,4.6,['18 V','2','55 Nm','Maletín y cargador'],'Más duradero y eficiente.','🔋'],
+['Taladro 12 V básico','AliExpress',34,3.9,['12 V','1','25 Nm','Cargador'],'El más barato; solo para tareas ligeras.','🔩']]}
+};
+
+export const KW: [string, RegExp][] = [['gifts',/regalo|cumple|aniversario|sorpresa/i],['home',/taladro|herramienta|bricolaje|l[aá]mpara|casa|hogar/i],['sport',/zapatill|running|bici|gimnasio|f[uú]tbol|deporte|yoga/i],['tech',/port[aá]til|ordenador|m[oó]vil|monitor|auricular|tablet|\bram\b/i]];
