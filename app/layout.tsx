@@ -16,8 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <div className="wrap">
           <header>
-            <Link href="/" className="logo">
-              BuyBy<b>IA</b>
+            <Link href="/" className="logo" aria-label="BuyByIA, ir al inicio">
+              <img src="/logo.png" alt="BuyByIA" width={112} height={64} />
             </Link>
             <span className="tag">Prototipo · datos de ejemplo</span>
           </header>

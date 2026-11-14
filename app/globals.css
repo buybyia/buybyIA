@@ -59,3 +59,7 @@ footer.site a,.legal a{color:var(--ac)}
 .cb p{margin:0;flex:1 1 260px}
 .cb a{color:var(--ac)}
 .cb div{display:flex;gap:8px}
+
+/* Logo */
+.logo img{display:block;height:64px;width:auto}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo img{background:#fff;border-radius:14px;padding:4px 10px}}
